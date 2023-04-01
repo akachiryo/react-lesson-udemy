@@ -1,4 +1,5 @@
 // 三項演算子（ ? : ）
+// aka
 
 const a = true;
 let resultA;
