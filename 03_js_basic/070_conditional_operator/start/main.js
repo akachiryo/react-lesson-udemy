@@ -1,14 +1,13 @@
 // 三項演算子（ ? : ）
-// aka
 
-const a = true;
-let resultA;
+const a = false;
+let resultA = a ? true : false;
 
-if(a) {
-  resultA = "true";
-} else {
-  resultA = "false";
-}
+// if(a) {
+//   resultA = "true";
+// } else {
+//   resultA = "false";
+// }
 console.log(resultA);
 
 // function getResult() {
