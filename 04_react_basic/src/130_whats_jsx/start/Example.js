@@ -14,6 +14,8 @@ const Example = () => {
     </div>
   );
 
+  console.log(sample1)
+
   console.log(
     (
       <div>
