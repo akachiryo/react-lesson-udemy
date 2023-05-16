@@ -1,9 +1,10 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { asyncCount } from "../../api/counter";
 const counter = createSlice({
   name: 'counter',
   initialState: {
-    count: 0
+    count: 0,
+    status: ""
   },
   reducers: {
     add(state, { type, payload }) {
@@ -22,7 +23,9 @@ const counter = createSlice({
 })
 
 const { add, minus } = counter.actions;
-
+const addAsyncWithStatus = createAsyncThunk(
+  "counter/asyncCount",
+)
 const addAsync = (payload) => {
   return async (dispatch, getState) => {
     const response = await asyncCount(payload)
