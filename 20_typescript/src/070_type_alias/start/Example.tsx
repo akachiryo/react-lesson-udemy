@@ -5,6 +5,8 @@ const Example = () => {
     age: number
 };
   const user: User ={ name: 'Taro', age: 26 };
+
+  type UserGender = 'man' | 'woman' | 'other';
 };
 
 
